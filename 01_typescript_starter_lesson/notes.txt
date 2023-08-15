@@ -1,0 +1,55 @@
+TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+because typescript is a developers tool
+
+typescript is a super set of JavaScript
+typescript is from microsoft
+
+before starting we need to add typescript to project yarn and or npm
+typescript files have extension ts 
+
+typescript compiles to javascript to compile a ts file to javascript
+we use tsc to do that and then run js file this is how typescript
+files are compileed and run
+
+now we have to every time run tsc command to compile the ts file
+instead we can use -w to watch a ts file whenever there are changes they will
+be automatically added
+
+but every time we compile a ts file it will create a js file and we want 
+to store our ts files in a saperate folder so we crteate a build folder 
+this is the code that is compiled code and we can store all of our js 
+html and css files in our build folder and ts files in ts folder
+
+but to do that we are going to tell our typescript where to put our 
+compiled js files offcourse we are going to need to config our typescripe
+what we can do is run tsc init which will give use config file to config
+typescript
+
+so it will create a tsconfig file that already contains
+commented out ts configurations now what we can do is provide a root 
+directory to ts so it knows where all the ts files are
+
+so we would also tell it the out directory where compilesd files would be located
+
+now for typescript to watch for all files just like we applied -w watch 
+for one file we will set it for entire directory by typing tsc -w 
+command in the terminal
+
+now that we have added ts config file we can see in its target
+config that the js version being used is es2016 so let will now be used instead of 
+var
+
+if you remove a file from your ts file you also have to remove it from your js file
+
+so what if we make ats file in root directory other than src it will create a js file 
+rigth there this is not what we want from it so what we do is we add include 
+src in our ts config file this will allow ts file to include that root file 
+also in our js folder
+
+if we dont give type in typescript that will still be valid javascript so the code will compile and run
+but typescript does not like this and will show a swingly error line typescript does not get tin the way of javascript and still compile
+
+typescript will compile js no matter how many errors there are with regards to typescript but off course we
+dont want that so to stop us when ever we make a mistake in ts to stop ts from amaking a js file 
+we can set a setting in tsconfig file by setting noEmitOnError value to true
+this will not allow ts file to compile a js file untill errors are removed 

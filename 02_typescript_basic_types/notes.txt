@@ -1,0 +1,19 @@
+typescript is a strongly typed langaguge that means we need to describr types unlike javascript
+where we dont have to define the types becuse in typesscript the types are dfefined
+on compile time while in javascipt the types are defined on run time when code is executed 
+
+so when we say that we have to define the types that nessecaryly does not mean that 
+we have to write the types we cannot write the types typescript would still know the type
+when refrenced to a value for example if we have avariable and assign a string value to it typescript would know 
+that the type of this variable is string but here is when typescripts strict type 
+comes into play is when we use a string for a number operation or even assign it a num,ber value it will give error so 
+meaning strit type does not just mean defining the type of a variable or whatever but also 
+the usage also becomes restriceted
+
+when type is any this will defeast typescript because any can be any thing
+
+with functions it is important to define the type of parameters no matter how many they are
+
+there is a union type that allows to create a union of two types so if we want a variable
+to have two different types we can create a union of the two types this will
+make a union of the two types in it 
